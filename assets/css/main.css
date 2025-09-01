@@ -12,7 +12,7 @@ body {
 }
 
 .max-w-lg {
-  max-width: 90rem;
+  max-width: 80rem;
   margin: 0 auto;
 }
 
@@ -47,15 +47,54 @@ header {
   color: #000;
 }
 
+.w-full {
+  width: 100%;
+}
+
+/* banner styles */
+.banner {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 6rem 0;
+}
+
+.banner-heading {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 4rem;
+  margin-bottom: 0.75rem;
+}
+
+.banner-desc {
+  color: #00000080;
+  max-width: 38rem;
+  font-size: 1.5rem;
+}
+
+.tomato {
+  color: #e95a08;
+}
+
 @media only screen and (max-width: 600px) {
   .none {
     display: none;
   }
 
   .p-1 {
-    padding: 1rem 1.5rem;
+    padding: 1.5rem 1rem;
   }
   .w-4 {
     width: 4rem;
+  }
+  .banner {
+    flex-direction: column-reverse;
+    padding: 0;
+  }
+  .banner-heading {
+    font-size: 1.5rem;
+  }
+  .banner-desc {
+    font-size: 0.875rem;
   }
 }
