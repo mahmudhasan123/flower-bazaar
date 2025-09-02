@@ -20,6 +20,14 @@ body {
   font-family: "Noto Serif", serif;
 }
 
+.text-center {
+  text-align: center;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -66,14 +74,73 @@ header {
   margin-bottom: 0.75rem;
 }
 
-.banner-desc {
+.text-gray {
   color: #00000080;
+}
+
+.banner-desc {
   max-width: 38rem;
   font-size: 1.5rem;
 }
 
 .tomato {
   color: #e95a08;
+}
+
+/* plant section styles */
+.plant-content h1 {
+  margin-bottom: 1rem;
+  font-size: 3rem;
+}
+
+.plant-content p {
+  font-size: 1.5rem;
+  max-width: 60rem;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+}
+.pb-13 {
+  padding-bottom: 13rem;
+}
+.flower-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: space-between;
+  gap: 2.5rem 0;
+}
+.py-2 {
+  padding: 1.5rem 0;
+}
+
+.flower-name {
+  margin-bottom: 0.75rem;
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+.flower-price {
+  font-weight: 700;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+}
+.flower-buy-button {
+  background: #e95a08;
+  color: white;
+  cursor: pointer;
+  text-transform: uppercase;
+  padding: 1.125rem 0;
+  font-weight: 600;
+  border: none;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+}
+.w-h {
+  width: 17rem;
+  height: 20rem;
+  object-fit: cover;
+  object-position: top;
+}
+.max-w-17 {
+  max-width: 17rem;
 }
 
 @media only screen and (max-width: 600px) {
@@ -84,17 +151,40 @@ header {
   .p-1 {
     padding: 1.5rem 1rem;
   }
+
   .w-4 {
     width: 4rem;
   }
+
   .banner {
     flex-direction: column-reverse;
     padding: 0;
   }
-  .banner-heading {
+
+  .banner-heading,
+  .plant-content h1 {
     font-size: 1.5rem;
   }
-  .banner-desc {
+
+  .banner-desc,
+  .plant-content p {
     font-size: 0.875rem;
+  }
+
+  .plant-content p {
+    margin-bottom: 1.5rem;
+    padding: 0 1rem;
+  }
+
+  .flower-container {
+    grid-template-columns: auto auto;
+    gap: 1.5rem 0;
+  }
+  .w-h {
+    max-width: 11rem;
+    max-height: 13rem;
+  }
+  .text-base {
+    font-size: 1rem;
   }
 }
